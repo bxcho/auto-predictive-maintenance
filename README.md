@@ -24,3 +24,13 @@ Predictive maintenance minimizes unexpected vehicle downtime, reduces warranty c
    ```bash
    git clone [https://github.com/bxcho/auto-predictive-maintenance.git](https://github.com/bxcho/auto-predictive-maintenance.git)
    cd auto-predictive-maintenance
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+3. **Train the Model (Generates the .pkl file):**
+   ```bash
+   python3 train_model.py
+4. **Start the FastAPI server:**
+   ```bash
+   uvicorn app:app --reload
+5. **Test the API:** Open your browser and navigate to http://127.0.0.1:8000/docs to use the interactive testing dashboard.
